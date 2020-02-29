@@ -18,7 +18,7 @@ class Github:
 
     time.sleep(2)
 
-    self.browser.find_element_by_xpath("//*[@id='login']/form").submit()   #input veya buttonun typeı submit ise bulunduğu formu göndermene aksiyonuna yarar, bu duurmda form elementine submit diyerek aynı işlemi yapmıiş olruuz. ama typeı button ise click etmek gerekir
+    self.browser.find_element_by_xpath("//*[@id='login']/form").submit()  
     
   def getFollowers(self):
     self.browser.get(f"https://github.com/{self.username}?tab=followers")
